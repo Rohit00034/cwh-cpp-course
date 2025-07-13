@@ -6,7 +6,9 @@
 using namespace std;
 typedef struct Student{  //data inside a structure is by def public in class it is private
 string name;
+private:        //structs now can have private variables
 int rollno;
+public:
 char div;
 void cartwheel(){  //we can define functions in a structure and inherit just like classes
     cout<<name<<" Performed a cartwheel\n";
