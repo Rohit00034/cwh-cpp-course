@@ -37,7 +37,7 @@ sfxartistsal=sfs;
 vfxartistsal=vfs;
 }
 int main(){
-    struct Student s1;  //or stu s1
+    struct Student s1;  //or stu s1,structures are typedefed by def in c++
     s1.name="Ramesh";
     s1.cartwheel();
     Gamedevteam horrorgame;  //horrogame is object of class gamedevteam
