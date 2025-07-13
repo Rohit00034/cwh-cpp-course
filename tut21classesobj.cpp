@@ -27,7 +27,7 @@ void getdata(){
 };
 
 };
-void Gamedevteam::setpridata(int ds,int mls,int dgs,int sfs,int vfs){  //declaration
+void Gamedevteam::setpridata(int ds,int mls,int dgs,int sfs,int vfs){  //definition
 devsalary=ds;
 marketleadsalary=mls;
 designersal=dgs;
