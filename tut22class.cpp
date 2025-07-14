@@ -9,11 +9,11 @@ class Gamer{
 }obj1,obj2,obj3;
 class Binarynum{
     private:
-    void chk_bin(void);//we saved a lot of space here byt just declaring the fucntion here
+    void chk_bin(void);//we saved a lot of space here by just declaring the fucntion here
     string bn;
     public:
     void read(void); //read in comp means take input and write means give us output
-//void chk_bin(void);//void here means it does'nt take an arguments
+//void chk_bin(void);//void here means it does'nt take any arguments
 void onescompilment(void);
 void displaybn();
 };
@@ -30,7 +30,7 @@ for(int i=0;i<bn.length();i++){
 }
 }
 void Binarynum:: onescompilment(){
-    chk_bin();
+    chk_bin(); //nesting member function
     for (int i = 0; i < bn.length(); i++)
     {
         if(bn.at(i)=='1'){ //here we cannot do comparison with "1" beacause double quote indicate a string but our string is made up of const char there single quote is used
@@ -43,7 +43,7 @@ void Binarynum:: onescompilment(){
     
 }
 void Binarynum:: displaybn(){
-    chk_bin(); //nestiong member function
+    chk_bin(); //nesting member function
     cout<<"Your binary number is:\n";
     for (int i = 0; i < bn.length(); i++)
     {
@@ -57,7 +57,7 @@ int main(){
     Binarynum b1;
     b1.read();
     //b1.chk_bin();  ..instead of this we used the fucntion as a nested function and this can't be used as it has become a private member function
-    b1.displaybn();
+    b1.displaybn();  
     b1.onescompilment();
     b1.displaybn();
     return 0;
