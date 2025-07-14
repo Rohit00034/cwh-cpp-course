@@ -20,7 +20,7 @@ public:
         cout << "The employee id is " << empid << "and is " << count << "th" << " employee\n";
     }
     static void getcount(){  /*this is a static member function which can only access static members and
-        other static functions*/
+        other static functions*/   //we can also access a static member with a simple function
         //cout<<empid; this throws an error 
         cout<<"The value of count is "<<count<<endl;
     }
