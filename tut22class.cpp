@@ -44,13 +44,15 @@ void Binarynum:: onescompilment(){
 }
 void Binarynum:: displaybn(){
     chk_bin(); //nesting member function
+    
     cout<<"Your binary number is:\n";
-    for (int i = 0; i < bn.length(); i++)
-    {
-        cout<<bn.at(i);
+    cout<<bn<<endl;
+    // for (int i = 0; i < bn.length(); i++)  why to do all this when we can just print it directly
+    // {
+    //     cout<<bn.at(i);
         
-    }
-    cout<<endl;
+    // }
+    // cout<<endl;
     
 }
 int main(){

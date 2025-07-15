@@ -1,7 +1,7 @@
 /*learnt about structures and unions*/
 /*Main diff in class and struct is the data in the struct is by default public and in class it is private
 ALSO DIFF BETWEEN STRUCTURE AND UNION IS THAT 
-1)IN STRUCT WE CAN USE MEMORY EFFICIENTLY ,WE CAN ONLY USE ONE DATA TYPE OUT OF THE ONES DECLARED SO THAT EXCESSIVE MEMORY 
+1)IN UNION WE CAN USE MEMORY EFFICIENTLY ,WE CAN ONLY USE ONE DATA TYPE OUT OF THE ONES DECLARED SO THAT EXCESSIVE MEMORY 
 IS NOT USED FOR UNUSED DATA TYPES (Memory is allocated once, and all members use the same memory block.)
 2)A structure can include all types of data but in unions only trivial data types can be used like int ,float ,char.
 data types such as strings which require a constructor & destructor cannot be used directly*/

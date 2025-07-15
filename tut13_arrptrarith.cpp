@@ -3,7 +3,7 @@ this is for an array,we can get the address of array by directly the arrayname a
 without using the "&(addres of in terms of codewharry)" operator .to traverse thorugh array using pointer 
 we can increment the pointer directly by one to shift the position of pointer array in the array by default it 
 points to the first element of the array . We can also get the value of the array by dereferencing the pointer.
-Formula for the address calculation of the ponter:-address(new)=address(old)+i*sizeof datatype*/ 
+Formula for the address calculation of the ponter:-address(new)=address(old/at index 0)+i*sizeof datatype*/ 
 #include <iostream>
 using namespace std;
 int main(){
@@ -29,8 +29,8 @@ int main(){
     cout<<pts[0];                  /*we can also use the preincrement and postincrement operators with pointers
     which also changes the value of the pointer while dereferencing*/
     //USING THE ADDRESS CALCULATION FORMULA ADDRESS(NEW)=ADDRESS(OLD)+I*SIZEOF(ARR ELEMENTS/data type)
-    int *newadd=pts+1*sizeof(pts[0]);  
-    cout<<endl<<*newadd;
+    int *newadd=pts+1*sizeof(pts[0]);  //here the index is incremented not the address of memory itself
+    cout<<endl<<*newadd;//therefore we get 4 *newadd=0+1*4
 
 
     return 0;

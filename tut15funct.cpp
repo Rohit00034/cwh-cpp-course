@@ -14,7 +14,7 @@ any function before main() function. WE WILL GET THIS ERROR UNTIL WE USE FUNCTIO
 }
 int/*return type*/ sum(int a,int b){    //can't do sum(int a,b)
 int c=a+b;
-//a and b are formal parameters
+//a and b are formal parameters here
 return c;
 }
 void extract(){  //void can be used to return nothing

@@ -5,8 +5,8 @@ using namespace std;
 //iNLINE FUNCTION IS A REQUEST TO THE COMPILER IT MAY OR MAY NOT ACCEPT IT DUE TO COMPILER LEVEL OPTIMIZATION
 inline int division(int a,int b){ /*the inline keyword makes the function come literally 
     in line ,it's like macro function of NASM(assembly langauge) it expands the code 
-    of the function at compile time instead of calling it saving time ans resources,
-    does soby avoiding call overhead*/
+    of the function at compile time instead of calling it saving time and resources,
+    does so by avoiding call overhead*/
 //NOTE:NOT RECOMMENDED TO USE LOOPS AND SWITCH CASE STATEMENTS AND STATIC VARIABLES WITH INLINE FUNC  
 return a/b;
 }

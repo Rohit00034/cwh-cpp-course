@@ -1,6 +1,6 @@
 /*learnt about break and continue statements, user defined snippets in vscode ,define them  and to use snippets as we want
-in our case we made code snippet begingeneralcode*/
-//we get this from begincodegeneral snippet :-
+in our case we made code snippet boilerplatecode*/
+//we get this from boilerplatecode snippet :-
 // #include <iostream>
 // using namespace std;
 // int main(){

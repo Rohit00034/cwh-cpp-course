@@ -13,7 +13,7 @@ void dispnum(){
 }
 friend Complex sumofboth(Complex o1,Complex o2); //declaring the sumofboth function as friend function using friend keyword
 };
-Complex sumofboth(Complex o1,Complex o2){ //this is a friend function which returns an object fo class complex
+Complex sumofboth(Complex o1,Complex o2){ //this is a friend function which returns an object of class complex
     Complex o3;
     // cout<<a; won't work because it needs objects to access the members it cannot do so directly
     o3.a=o1.a+o2.a;

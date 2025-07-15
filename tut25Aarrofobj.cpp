@@ -37,3 +37,6 @@ for (int i = 0; i <count ; i++)
     
     return 0;
 }
+/*is the memory of object different or is it the sum of the attributes or variables 
+defined in the class?
+Object memory = Sum of non-static member variables + padding (+ vptr if virtual functions exist)*/
