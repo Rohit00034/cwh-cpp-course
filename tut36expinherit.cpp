@@ -1,6 +1,6 @@
 /*Learnt theory about inheritance and its types refer 
 video https://youtu.be/Dmrc82dL7E8?si=XVrMwBznQFfp7iae 
-or pdf*/
+or folder for theory*/
 //this is an experiment to find out if an obj of parent class can use the child class attributes 
 #include <iostream>
 using namespace std;
