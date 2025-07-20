@@ -18,7 +18,7 @@ public:
 Programmer(int empid){  /*as we have inherited from employee class whenever we will
     create an object of programmer class the default constructor of employee class will 
     be called first then parameterized constructor of the programmer class will be called*/
-cout<<"\nDefault constructor of Employee class called\n";
+cout<<"\nParameterized constructor of Employee class called\n";
     id = empid;
 }
 };

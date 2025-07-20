@@ -23,7 +23,7 @@ int main(){
     cout<<"we are in teh main block of the code"<<endl;
     cout<<"Creating first object "<<endl;
     Num n1;
-    {    //this is called a block ,the scope of anything is block is till the block ends that  is inside the block only 
+    {    //this is called a block ,the scope of anything in block is till the block ends that  is inside the block only 
         cout<<"Entering the block\n";
 cout<<"Creating 2 more objects"<<endl;
 Num n2,n3;
@@ -33,7 +33,7 @@ cout<<"Exiting the block\n";
     n1.~Num(); //this manual call to the destructor won't act as a destructor but as a function
     /*When the destructor is automatically called by the compiler then only the object 
     memmory is deallocated*/
-// cout<<n1.a; //we can still access the memory data of n1
+// cout<<n1.a; //we can still access the memory data of n1 which shows that the n1 object is noy destroyed
     cout<<"Back to main\n";
     return 0;
 }
