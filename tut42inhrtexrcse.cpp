@@ -77,7 +77,12 @@ void Simplecalc ::dividef(){
     inputnumf();
     cout<<"Divide result is : "<<numf1/numf2<<endl;
 }
-class Scientificcalc /*: public Simplecalc*/{  //here if i inherit simplecalc then again if i inherit the simplecalc at the hybridcalc then all the functions in the simplecalc will become ambigous that is we get copies of the simplecalc confusing the compler which one to use
+class Scientificcalc /*: public Simplecalc*/{  /*here if i inherit simplecalc then again  
+    inherit the simplecalc at the hybridcalc then all the functions in the simplecalc 
+    will become ambigous that is we get copies of the simplecalc class one from inheriting 
+     in the scientific and one from inheriting in the hybridcalc ,confusing the 
+    compiler which one to use this can be resolved by ambiguity resolution whihc is in
+    next tut*/
 public:
     int factorial(int n);
  void square();
