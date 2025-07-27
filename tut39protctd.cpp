@@ -5,12 +5,15 @@ ACCESSED DIRECTLY JUST LIKE PRIVATE*/
 using namespace std;
 class Base{
     protected:
-    int a;
+    int a=20;
     private:
     int b;
 };
 class Derived :protected Base{
-
+public:
+    void display(){
+    cout<<"value of inherited protected data member is: "<<a;
+}
 };
 /*working of access specifiers with inheritance
       Visibiltiy mode:      public inheritance   Private inheritance       protected inheritance
@@ -20,6 +23,7 @@ class Derived :protected Base{
 */
 int main(){
     Derived d;
-    // cout<<d.a; this will not work asa is a protected member but it is inherited unlike private members
+    // cout<<d.a; this will not work as a is a protected member but it is inherited unlike private members
+    d.display();
     return 0;
 }
