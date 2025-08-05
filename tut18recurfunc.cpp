@@ -38,7 +38,7 @@ int fib(int a){
 /*BREAKDOWN OF fib(5)
 fib(3)+fib(4)
 fib(1)+fib(2)+fib(2)+fib(3)  here we can see there is 2 calls of fib(2) which show increase in call overhead*/
-void runfib(int seq){
+void runfib(int seq){      //don't try to decode this we want sequence till 18 term but we get till 9 this is because each time the value of count increases the value of seq decreases mkaing them equal at some point 9=9
     static int count=0;
     if(count<=seq){           //this function gives first n(seq in this case) fibonacci sequence
         cout<<" "<<fib(count)<<" ";
