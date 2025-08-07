@@ -9,7 +9,7 @@ protected:
 int a=22;
 void getchilddata(){
 // cout<<b; won't work as b is not defined meaninf we cannot access the child attributes
-}
+}/*But we can make it work, it won't work like directly access the data of the child class,but we can still access the data of child class by a function which takes the child class object as a parameter ,what we will do is We will make a forward declaration of the child class before parent class, and add a default argument in this function that will be an object of child class ,then we will only declare the function in the parent class and define it after the child class is defined , then we will do childclassobj.b to access the variable/data of child class*/
 };
 class Child : public Parent{ //inherited the parent class
 public:
