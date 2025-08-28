@@ -12,7 +12,7 @@ class A : public C ,public B{
 //constructor of C() then B() then A()
 }
 case3:
-class A :public B , virtual public C{     virtual classs cons is given priority first(if all are vitual class then the order of declation is followed)
+class A :public B , virtual public C{     virtual classs cons is given priority first(if all are virtual class then the order of declation is followed)
 //constructor of C() first then B() then A()
 }
 */
