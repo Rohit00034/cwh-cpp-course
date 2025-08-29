@@ -2,7 +2,9 @@
 /*Main diff in class and struct is the data in the struct is by default public and in class it is private
 ALSO DIFF BETWEEN STRUCTURE AND UNION IS THAT 
 1)IN UNION WE CAN USE MEMORY EFFICIENTLY ,WE CAN ONLY USE ONE DATA TYPE OUT OF THE ONES DECLARED SO THAT EXCESSIVE MEMORY 
-IS NOT USED FOR UNUSED DATA TYPES (Memory is allocated once, and all members use the same memory block.)
+IS NOT USED FOR UNUSED DATA TYPES (Memory is allocated once, and all members use the same memory block
+In a union, all members share the same memory location, and only the size of the largest 
+member determines the total memory allocated for the union..)
 2)A structure can include all types of data but in unions only trivial data types can be used like int ,float ,char.
 data types such as strings which require a constructor & destructor cannot be used directly*/
 #include <iostream>
@@ -28,11 +30,19 @@ int main(){
     ncs nigga;
     nigga.name="Premiumnigga";
     cout<<"value of inherited structure member is: "<<nigga.name<<endl; 
-    /*UNION , in union you can declare multiple types of data but only one data type can be used from the union
-    and only memory for that data type will be allocated. in below example we may use rice,car,pounds for 
-    exchanging products or money for products, if we use rice the memory for only rice will be allocated
-    after rice if we use pounds the rice will be overwritten by the pounds.
-    */
+    /* 
+   UNION: In a union, you can declare multiple members of different data types,
+   but only one member can contain a valid value at a time.
+
+   All members share the same memory location, and memory is allocated only once,
+   equal to the size of the largest member.
+
+   In the example below, we might use 'rice', 'car', or 'pounds' for exchanging products
+   or money. If we assign a value to 'rice', it occupies the shared memory. 
+   Later, if we assign a value to 'pounds', it will overwrite the value of 'rice', 
+   since both use the same memory space.
+*/
+
     cout<<"UNIONS:"<<endl;
     union money{
         int rice;
