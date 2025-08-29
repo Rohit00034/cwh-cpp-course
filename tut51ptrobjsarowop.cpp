@@ -30,7 +30,7 @@ int main(){
     //creating array of objects dynamically
     Complexnum *ptrtoarr=new Complexnum[4];
     ptrtoarr->setdata(3,4);// or (*ptrtoarr).setdata(3,4);
-    ptrtoarr->getdata();// or (*ptrtoarr).setdata(3,4);
+    ptrtoarr->getdata();// or (*ptrtoarr).getdata(3,4);
     (ptrtoarr+1)->setdata(50,97);
     (ptrtoarr+1)->getdata();
 
