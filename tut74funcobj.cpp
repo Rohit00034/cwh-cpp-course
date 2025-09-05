@@ -1,3 +1,4 @@
+//LEARNT ABOUT FUNCTORS(FUNCTION OBJECTS)
 #include <iostream>
 #include <functional> //contains the functors(function objects)
 #include <algorithm>
