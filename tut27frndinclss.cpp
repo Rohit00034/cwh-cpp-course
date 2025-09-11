@@ -50,7 +50,7 @@ int Calculator::addrealcomplex(Complex o1,Complex o2){ /*defining the addrealcom
     after it is declared a friend inside the Complex class*/
     return (o1.a+o2.a);
 }
-int Calculator::addimagcomplex(Complex o1,Complex o2){ /*defining the addrealcomplex function 
+int Calculator::addimagcomplex(Complex o1,Complex o2){ /*defining the addimagcomplex function 
     after it is declared a friend inside the Complex class*/
     return (o1.b+o2.b);
 }
