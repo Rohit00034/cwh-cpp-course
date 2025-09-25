@@ -15,6 +15,7 @@ Q4. How is code reusability implemented?
 #include <iostream>
 #include <cmath>
 using namespace std;
+//here we could have used template function rather than declaring functions for diff data types
 class Simplecalc{
 protected:
 int num1,num2;

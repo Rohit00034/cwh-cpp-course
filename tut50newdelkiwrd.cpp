@@ -30,3 +30,8 @@ int main(){
 delete [] arr; 
     return 0;
 }
+/*NOTE:IF WE WANT TO USE THE MEMORY ADDRESS DIRECTLY LIKE cout<<*(0x899ecesd) we can't do so directly but we 
+can cast it like 
+int* p = reinterpret_cast<int*>(0x899ece);
+cout << *p;
+*/
