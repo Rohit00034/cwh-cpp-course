@@ -37,7 +37,7 @@ int main(){
     //if i want to insert it at index 2 then i can simply do iter+1 just like pointer in tut13
     vec1.insert(iter+1,0);
     displayvec(vec1);
-    //if i want to insert 5 consecutive elements that can also be done as follows
+    //if i want to insert same element 5 consecutive times that can also be done as follows
     iter=vec1.begin();// re-assign after insert, to avoid invalidation //below code wasn't working without this line
     // vec1.insert(iter+1,5,21);//inserting 5 times 21 at index     
     displayvec(vec1);
