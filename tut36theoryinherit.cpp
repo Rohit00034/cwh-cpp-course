@@ -15,7 +15,7 @@ object as a parameter ,what we will do is We will make a forward declaration of 
 class before parent class, and add a default argument in this function that will be an 
 object of child class ,then we will only declare the function in the parent class and 
 define it after the child class is defined , then we will do childclassobj.b to access the 
-variable/data of child class*/
+variable/data of child class .Check tut36Solution.cpp */
 };
 class Child : public Parent{ //inherited the parent class
 public:
