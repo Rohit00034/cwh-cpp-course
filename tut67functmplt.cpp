@@ -10,7 +10,8 @@ using namespace std;
 //     return avg;
 // }
 // instead of defining or overloading functiopn for diff data types we will use template
-template <class T1,class T2>
+// template <class T1,class T2> we can use 'typename' keyword instead of 'class' here too
+template<typename T1,typename T2>
 float average(T1 a,T2 b){
     float avg=(a+b)/2;
     return avg;
